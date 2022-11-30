@@ -1,0 +1,26 @@
+transports:
+  declinePercentage:
+    limits:
+      30: 10
+      60: 20
+      120: 30 
+  jwt:
+    issuer: TransportApp
+    alg: HMAC512
+    secret: "ok"
+    duration: 10m  
+spring:
+  mvc:
+    format:
+      date: yyyy-MM-dd
+      time: HH:mm:ss
+      date-time: yyyy-MM-dd HH:mm:ss
+  datasource:
+    url: jdbc:postgresql://localhost:5432/logistic
+    username: postgres
+    password: newpass6715
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    open-in-view: false

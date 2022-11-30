@@ -1,0 +1,22 @@
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: false
+transports:
+  incomeDeclinePercentage:
+    limits:
+      30: 10
+      60: 20
+      120: 30 
+  jwt:
+    issuer: TransportTestApp
+    alg: HMAC512
+    secret: "secret"
+    duration: 1m 
+logging:
+  level:
+    org:
+      springframework:
+        security: debug    

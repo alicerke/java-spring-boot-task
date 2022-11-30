@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/webshop
+    username: postgres
+    password: newpass6715
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    open-in-view: false
